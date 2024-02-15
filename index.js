@@ -3,7 +3,7 @@
 let = estaRegistrado = prompt ("¿Estas Registrado? responde con si o no");
 let = mayorDeEdad = prompt("¿Eres mayor de edad? responde con si o no");
 
-if (estaRegistrado === "si" & mayorDeEdad === "si"){
+if (estaRegistrado === "si" && mayorDeEdad === "si"){
     console.log("bienvenidos a nuestra tienda online")
 }else{
     console.log("No cumples con los requisitos para poder ingresar");
@@ -37,3 +37,23 @@ while ( i < 10) {
     i = i + 1;
 }
 
+// segunda entrega: incluimos arrays para controlar nuestros productos
+let productos = ["iphone", "samsung", "motorola"]
+
+console.log ("productos disponibles");
+for let =0; i < productos.length: i++ {
+    console.log((i + 1) + ". " + productos [i]);
+}
+ //agrego un producto
+ productos.push ("xiaomi");
+
+ //elimino un producto
+ let indiceSamsung = productos.indexOf ("samsung");
+ if (indiceSamsung !== -1) {
+    productos.splice (indiceSamsung, 1);
+ }
+
+ //voy a utilizar una funcion para agregar otro producto
+ function agregarProducto ("alcatel") {
+    productos.push ("alcatel");
+ }
